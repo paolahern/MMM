@@ -68,10 +68,15 @@ class TriviaScene extends Phaser.Scene {
 
         // Arreglo de preguntas
         this.preguntas = [
-            {pregunta:"¿Quién usa un suéter rojo y garras?", opciones:["Jason","Freddy","Chucky","Ghostface"], correcta:1},
-            {pregunta:"¿En qué película aparece Pennywise?", opciones:["It","Scream","Halloween","El Conjuro"], correcta:0},
-            {pregunta:"¿Qué arma usa Michael Myers?", opciones:["Machete","Cuchillo","Hacha","Pistola"], correcta:1}
-        ];
+        {pregunta:"¿Quién aparece en tus sueños y usa un sombrero y guante con cuchillas?", opciones:["Freddy Krueger","Jason Voorhees","Leatherface","Pinhead"], correcta:0},
+        {pregunta:"¿En qué película aparece el muñeco Chucky?", opciones:["Annabelle","Child's Play","El Conjuro","Saw"], correcta:1},                                    
+        {pregunta:"¿Qué arma usa Jason Voorhees?", opciones:["Cuchillo","Motosierra","Machete","Hacha"], correcta:2},
+        {pregunta:"¿Quién es el asesino enmascarado de la película Scream?", opciones:["Michael Myers","Ghostface","Jigsaw","Candyman"], correcta:1},
+        {pregunta:"¿En qué película aparece la familia poseída por el demonio Pazuzu?", opciones:["Hereditary","El Exorcista","Insidious","La Monja"], correcta:1},
+        {pregunta:"¿Qué objeto maldito protagoniza la película Annabelle?", opciones:["Muñeca","Espejo","Caja musical","Libro"], correcta:0},
+        {pregunta:"¿Qué villano usa una máscara blanca inexpresiva?", opciones:["Ghostface","Jason","Michael Myers","Chucky"], correcta:2},
+        {pregunta:"¿En qué película aparece el payaso Art?", opciones:["Terrifier","It","Saw","Halloween"], correcta:0}
+    ];
 
         // Texto de vidas y puntaje
         this.textoVidas = this.add.text(20,20,"❤️".repeat(this.vidas),{fontSize:"22px"});
@@ -248,4 +253,5 @@ if ("serviceWorker" in navigator) {
   });
 
 }
+
 
