@@ -7,7 +7,7 @@ class InicioScene extends Phaser.Scene {
 
     preload(){
         // Carga la imagen del fondo para la pantalla de inicio
-        this.load.image("fondoInicio","..fondo.jpg");
+        this.load.image("fondoInicio","fondo.jpg");
     }
 
     create(){
@@ -57,7 +57,7 @@ class TriviaScene extends Phaser.Scene {
 
     preload(){
         // Carga la imagen de fondo del juego
-        this.load.image("fondoJuego","..fondo1.jpg");
+        this.load.image("fondoJuego","fondo1.jpg");
     }
 
     create(){
@@ -248,3 +248,4 @@ if ("serviceWorker" in navigator) {
   });
 
 }
+
