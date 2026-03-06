@@ -7,7 +7,7 @@ class InicioScene extends Phaser.Scene {
 
     preload(){
         // Carga la imagen del fondo para la pantalla de inicio
-        this.load.image("fondoInicio","fondo2.png");//cambio de imagen
+        this.load.image("fondoInicio","fondo.jpg");//cambio de imagen
     }
 
     create(){
@@ -256,6 +256,7 @@ if ("serviceWorker" in navigator) {
   });
 
 }
+
 
 
 
