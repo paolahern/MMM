@@ -1,6 +1,6 @@
 {
    "_comment": "nombre completo de la app",
-  "name": "Trivia: MMMM", 
+  "name": "Trivia: Spooky :b", 
 
     "_comment1": "nombre corto debajo del icono",
   "short_name": "mmm",
@@ -12,10 +12,10 @@
   "display": "standalone",
 
     "_comment4": "color de fondo al iniciar",
-  "background_color": "#880404",
+  "background_color": "#2b0000",
 
     "_comment5": "color del sistema",
-  "theme_color": "#a78dca",
+  "theme_color": "#3b0000",
   
     "_comment6": "orientación del juego",
   "orientation": "landscape",
@@ -34,3 +34,4 @@
   ]
 
 }
+
