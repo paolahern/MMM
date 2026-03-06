@@ -111,7 +111,7 @@ class TriviaScene extends Phaser.Scene {
                 .setInteractive();
 
             let texto = this.add.text(180,250+i*80,actual.opciones[i],{
-                fontSize:"18px"
+                fontSize:"18px",
                 color: "#ff4444",//cambio de color 
     
             }).setOrigin(0.5);
@@ -257,6 +257,7 @@ if ("serviceWorker" in navigator) {
   });
 
 }
+
 
 
 
