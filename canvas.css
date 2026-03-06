@@ -1,7 +1,7 @@
 /* Estilos para todo el cuerpo de la página */
 body {
   margin: 0; /* Quita los márgenes predeterminados del navegador */
-  background: #6a74fa; 
+  background: linear-gradient(180deg, #0015ff, #0044ff, #6a74fa); /*Degradado de azul*/
   display: flex; /* Utiliza flexbox para alinear contenido fácilmente */
   justify-content: center; /* Centra el contenido horizontalmente */
   align-items: center; /* Centra el contenido verticalmente */
@@ -15,4 +15,5 @@ canvas {
   position: absolute; /* Posiciona el canvas de forma absoluta para que ocupe toda la pantalla */ 
 
 }
+
 
