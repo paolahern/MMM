@@ -19,7 +19,6 @@ class InicioScene extends Phaser.Scene {
         // Título del juego
         this.add.text(180,200,"FearLevel",{
             fontSize:"28px",
-            color:"#ffffff"
         }).setOrigin(0.5); // Centrado
 
         // Botón de comenzar
@@ -257,6 +256,7 @@ if ("serviceWorker" in navigator) {
   });
 
 }
+
 
 
 
