@@ -100,8 +100,7 @@ class TriviaScene extends Phaser.Scene {
             wordWrap:{width:300},
             align:"center"
         }).setOrigin(0.5);
-        this.textoPregunta.setShadow("#ffffff",3);//para agregarle sombra y difuminado
-
+     
         this.botones = [];
 
         // Crear botones para las opciones
@@ -256,6 +255,7 @@ if ("serviceWorker" in navigator) {
   });
 
 }
+
 
 
 
