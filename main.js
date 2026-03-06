@@ -7,7 +7,7 @@ class InicioScene extends Phaser.Scene {
 
     preload(){
         // Carga la imagen del fondo para la pantalla de inicio
-        this.load.image("fondoInicio","fondo.jpg");
+        this.load.image("fondoInicio","fondo2.png");//cambio de imagen
     }
 
     create(){
@@ -23,7 +23,7 @@ class InicioScene extends Phaser.Scene {
         }).setOrigin(0.5); // Centrado
 
         // Botón de comenzar
-        let boton = this.add.rectangle(180,450,200,60,0x550000)
+        let boton = this.add.rectangle(180,450,200,60,0x6b0000)// se cambio el color del boton
             .setInteractive(); // Lo hace clickeable
 
         this.add.text(180,450,"COMENZAR",{
@@ -66,7 +66,7 @@ class TriviaScene extends Phaser.Scene {
             .setOrigin(0)
             .setDisplaySize(this.scale.width, this.scale.height);
 
-        // Arreglo de preguntas
+        // Arreglo de preguntas agregue mas preguntas de terror 
         this.preguntas = [
         {pregunta:"¿Quién aparece en tus sueños y usa un sombrero y guante con cuchillas?", opciones:["Freddy Krueger","Jason Voorhees","Leatherface","Pinhead"], correcta:0},
         {pregunta:"¿En qué película aparece el muñeco Chucky?", opciones:["Annabelle","Child's Play","El Conjuro","Saw"], correcta:1},                                    
@@ -97,19 +97,22 @@ class TriviaScene extends Phaser.Scene {
         // Mostrar la pregunta centrada
         this.textoPregunta = this.add.text(180,150,actual.pregunta,{
             fontSize:"20px",
+            color:"#000000",   // negro
             wordWrap:{width:300},
             align:"center"
         }).setOrigin(0.5);
+        this.textoPregunta.setShadow("#ffffff",3);//para agregarle sombra y difuminado
 
         this.botones = [];
 
         // Crear botones para las opciones
         for(let i=0;i<4;i++){
-            let boton = this.add.rectangle(180,250+i*80,300,60,0x222222)
+            let boton = this.add.rectangle(180,250+i*80,300,60,0x3b0000)// se cambio color del boton 
                 .setInteractive();
 
             let texto = this.add.text(180,250+i*80,actual.opciones[i],{
                 fontSize:"18px"
+                 color:"#ffffff"
             }).setOrigin(0.5);
 
             boton.on("pointerdown",()=>{ this.verificar(i); });
@@ -253,6 +256,7 @@ if ("serviceWorker" in navigator) {
   });
 
 }
+
 
 
 
