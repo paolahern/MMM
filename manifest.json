@@ -27,12 +27,13 @@
       "type": "image/jpg"
     },
     {
-      "src": "fondo1.jpg",
+      "src": "fondo2.png",
       "sizes": "512x512",
       "type": "image/jpg"
     }
   ]
 
 }
+
 
 
