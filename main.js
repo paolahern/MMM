@@ -17,7 +17,7 @@ class InicioScene extends Phaser.Scene {
             .setDisplaySize(this.scale.width, this.scale.height); // Se adapta a cualquier pantalla
 
         // Título del juego
-        this.add.text(180,200,"TRIVIA DE TERROR",{
+        this.add.text(180,200,"FearLevel",{
             fontSize:"28px",
             color:"#ffffff"
         }).setOrigin(0.5); // Centrado
@@ -253,5 +253,6 @@ if ("serviceWorker" in navigator) {
   });
 
 }
+
 
 
